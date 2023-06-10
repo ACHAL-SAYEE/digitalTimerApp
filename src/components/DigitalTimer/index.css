@@ -1,0 +1,55 @@
+.bg-container {
+  background-image: linear-gradient(to right, #defafe, #cffcf1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.timer {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  /* background-position: left top; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+  background-size: cover;
+  border: solid black;
+}
+
+.timer2 {
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  background-color: white;
+}
+
+.timer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 50px;
+  width: 50px;
+  background-color: white; */
+}
+.timer-container {
+  display: flex;
+  align-items: center;
+}
+.control-icon {
+  height: 20px;
+}
+
+.playreset {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.timerlimit{
+
+}
+.adjusttimerlimit{
+    display: flex;
+    align-items: center;
+}
