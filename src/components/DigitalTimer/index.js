@@ -21,12 +21,20 @@ class DigitalTimer extends Component {
 
   IncreaseTimer = () => {
     const {isRest} = this.state
-    if (isRest) this.setState(prev => ({timerlimit: prev.timerlimit + 1}))
+    if (isRest)
+      this.setState(prev => ({
+        timerlimit: prev.timerlimit + 1,
+        timerMincount: prev.timerMincount + 1,
+      }))
   }
 
   DecreaseTimer = () => {
     const {isRest} = this.state
-    if (isRest) this.setState(prev => ({timerlimit: prev.timerlimit - 1}))
+    if (isRest)
+      this.setState(prev => ({
+        timerlimit: prev.timerlimit - 1,
+        timerMincount: prev.timerMincount - 1,
+      }))
   }
 
   startorstop = () => {
@@ -63,6 +71,7 @@ class DigitalTimer extends Component {
       timerStatus: 'Paused',
       timerMincount: 25,
       timerSeccount: 0,
+      timerlimit: 25,
     }))
   }
 
